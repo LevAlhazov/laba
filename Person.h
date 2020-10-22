@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include <iostream>
 #include <string.h>
 #include <string>
@@ -18,8 +17,9 @@ public:
 	{
 		if (strlen(n) > 10)
 		{
-			name = default;
+			name = "default";
 		}
+		else name = n;
 		id = i;
 		age = a;
 	}
