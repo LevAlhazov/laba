@@ -15,12 +15,14 @@ protected:
 public:
 	Person(string n, long i, int a)
 	{
-		if (strlen(n) > 10)
+		if (n.length() > 10)
 		{
 			name = "default";
 		}
-		else name = n;
+		else
+		name = n;
 		id = i;
 		age = a;
 	}
+	virtual ~Person() {};
 };
